@@ -6,7 +6,7 @@ export class HtmlGreeter extends Greeter {
     super(greeting);
     this.tagName = tagName;
   }
-  greet(name: string) {
+  greet(name: string): string {
     return `<${this.tagName}>${super.greet(name)}</${this.tagName}>`;
   }
 }

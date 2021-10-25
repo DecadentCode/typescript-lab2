@@ -3,7 +3,7 @@ export class Greeter {
   constructor(greeting: string) {
     this.greeting = greeting;
   }
-  greet(name: string) {
+  greet(name: string): string {
     return `${this.greeting}, ${name}!`;
   }
 }
